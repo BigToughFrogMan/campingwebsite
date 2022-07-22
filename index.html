@@ -31,7 +31,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
-                    <a class="btn btn-info btn-lg text-nowrap mt-4" href="#reserveForm">Reserve Campsite</a>
+                    <a class="btn btn-info btn-lg text-nowrap mt-4" href="#reserveForm" data-html="true" data-placement="bottom" data-toggle="tooltip" title="Or call us a <br /> <strong> 1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -170,6 +170,11 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
